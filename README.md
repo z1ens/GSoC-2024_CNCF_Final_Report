@@ -5,6 +5,13 @@
 **Organization:** [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io)  && [Open-Cluster-management](https://open-cluster-management.io)  
 **Project:** [[GSoC 2024]Scheduling AI Workload Among Multiple Clusters](https://github.com/open-cluster-management-io/ocm/issues/369)
 
+## TL;DR
+
+This is my first time participating in Google Summer of Code. And I have successfully completed the project, including the development of an addon and the Kueue admission check controller.
+- **Key Links**:
+  - [Community Demo (Addon)](link to the community meeting)
+  - [OCM Repository (Kueue Controller Proposal)](link to the repository)
+
 ## Background
 
 [Open Cluster Management (OCM)](https://open-cluster-management.io) is a [CNCF](https://www.cncf.io) project focused on Multi-Cluster and Multi-Cloud management for Kubernetes applications. It offers open APIs for cluster registration, workload distribution, and dynamic placement of policies and workloads. The placement concept in OCM enables developers to deploy workloads dynamically across clusters based on resource availability, such as memory and CPU.
@@ -72,7 +79,7 @@ These components aim to significantly improve the scheduling of AI workloads, en
   - Present my progress and contributions in OCM community meetings.
   - Demonstrate the enhanced resource usage collect addon with GPU/TPU support.
 
-## Phase 2: Integrating MultiKueue and Kueue
+### Phase 2: Integrating MultiKueue and Kueue
 
 - **Set Up MultiKueue Environment**:
   - Prepare and configure a MultiKueue environment.
@@ -92,19 +99,46 @@ These components aim to significantly improve the scheduling of AI workloads, en
   - Showcase the integrated solution and its effectiveness in an OCM community meeting.
 
 ## Current State
-- Node Scope and Cluster Scope scoring mechanisms are integrated and operational within the OCM framework.
-- The addon successfully contributes scores that influence workload placement decisions.
+
+### Addon Development
+
+- **Pull Request Status**: There is an ongoing [Pull Request](https://github.com/open-cluster-management-io/addon-contrib/pull/20) for the `Addon` section, which is currently under code review. While the review process is still in progress, all core functionalities have been implemented.
+
+- **Community Demo**: The `Addon` has already been demonstrated in a community demo, and the recording is available on YouTube [here](https://www.youtube.com/watch?v=b9h-uwZw7jA&t=310s).
+
+REF: 
+- [GPU/TPU-resource-usage-collect-addon #20](https://github.com/open-cluster-management-io/addon-contrib/pull/20)
+- [Open Cluster Management - AI Workload Scheduling Addon + ArgoCD Pull Integration v2 POC](https://www.youtube.com/watch?v=b9h-uwZw7jA&t=310s)
+
+### Kueue Admission Check Controller
+
+- **Proposal Review**: The proposal for the Kueue admission check controller has undergone an initial review.
+
+- **Community Presentation**: This proposal was also presented during the OCM community meeting, receiving feedback for further refinement.
+
+- **Next Steps**: We plan to further improve the proposal based on the feedback and review before merging it into a specific OCM repository [here](https://github.com/open-cluster-management-io/ocm/tree/main/solutions).
+
+REF: [OCM Kueue Admission Check Controller Proposal](https://github.com/z1ens/OCM_Kueue_Admission_Check_Controller/blob/main/README.md)
 
 ## Future Work
-- Further refinement of the Kueue Admission Check controller.
-- Expanding support for more complex scheduling scenarios and additional resource types.
+
+- **Addon Code Refinement**: Focus will be placed on refining the current addon code to incorporate community feedback and to address additional use cases. Once all relevant issues are resolved and discussions are concluded, the addon will be merged into the [addon-contrib repository](https://github.com/open-cluster-management-io/addon-contrib) for ongoing maintenance and improvement.
+
+- **Kueue Controller Integration**: The Kueue admission check controller will be merged into the [designated OCM repository](https://github.com/open-cluster-management-io/ocm/tree/main/solutions) after thorough review.
 
 ## Challenges & Learnings
-- Balancing between bin-packing and spreading strategies required careful consideration of different use cases.
-- Gained significant experience in Kubernetes scheduling and Golang development.
 
-## Code Contributions
-- Merged resource scoring mechanisms and addon into the [addon-contrib repository](https://github.com/open-cluster-management-io/addon-contrib).
+### Mentorship and Guidance
+- **Role of Mentors**: I am immensely grateful to my mentors, Qing Hao and Jian Qiu. Particularly Qing Hao, who has been instrumental in guiding me through every detail of this project. Her support has been not just technical but also emotional, offering congratulations after successful demos and reassurance during challenges.
 
+### Problem-Solving Approach
 
+- **Initial Struggles**: Early in my GSoC journey, I often tried to solve issues independently, leading to frustration and I found out that I was always stuck somewhere.
 
+- **Learning to Collaborate**: I realized the value of consulting my mentors and discussing problems with the community, which often led to quick resolutions. This experience taught me the importance of seeking guidance from experts and engaging more with the community.
+
+### Growth Through Challenges
+
+- **Embracing Failure**: I learned that failure is a part of growth. During a recent demo, I faced a minor issue that initially made me very nervous. However, my mentors and the host reassured me, which helped me see that mistakes are opportunities to learn, not failures.
+
+- **Developing Composure**: This experience also highlighted the importance of maintaining composure during important presentations. I learned to stay calm, present my points clearly, and then return to address any issues.
