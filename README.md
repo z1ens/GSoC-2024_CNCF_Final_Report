@@ -30,7 +30,7 @@ This experience has been invaluable, enhancing my skills in cloud-native technol
 
 ![Kuebecon logo](./images/kubecon.jpeg)
 
-I'm thrilled to announce that my GSoC project has become an integral part of two significant presentations at the upcoming [KubeCon + CloudNativeCon + Open Source Summit China 2024 in Hong Kong](https://events.linuxfoundation.org/kubecon-cloudnativecon-open-source-summit-ai-dev-china/). This inclusion underscores the relevance and impact of our work on AI workload scheduling in multi-cluster environments.
+I'm thrilled to announce that my GSoC project has become an integral part of two significant presentations at the [KubeCon + CloudNativeCon + Open Source Summit China 2024 in Hong Kong](https://events.linuxfoundation.org/kubecon-cloudnativecon-open-source-summit-ai-dev-china/). This inclusion underscores the relevance and impact of our work on AI workload scheduling in multi-cluster environments.
 The two relevant topics being demonstrated at this prestigious event are:
 
 1. [Boundaryless Computing: Optimizing LLM Performance, Cost and Efficiency in Multi-Cloud Architecture](https://kccncossaidevchn2024.sched.com/event/1eYXG/boundaryless-computing-optimizing-llm-performance-cost-and-efficiency-in-multi-cloud-architecture-yi-dui-dou-zhao-daepnano-llmxia-reyi-jian-zhu-red-hat-kai-zhang-alibaba-cloud-intelligence)
@@ -61,7 +61,7 @@ The key components include:
 
 - I deliver a proposal for the external [Kueue Admission Check controller](https://kueue.sigs.k8s.io/docs/admission-check-controllers/provisioning/) which integrates OCM `Placement` results with [MultiKueue](https://kueue.sigs.k8s.io/docs/concepts/multikueue/). The controller interprets OCM `Placement` decisions to generate corresponding `MultiKueueConfig` and `MultiKueueCluster` resources, facilitating a streamlined setup of the [MultiKueue](https://kueue.sigs.k8s.io/docs/concepts/multikueue/) environment. This allows users to select clusters based on custom criteria, making AI/ML workload scheduling more responsive and aligned with the specific demands of these workloads.
 
-TThese components are designed to significantly improve the scheduling and resource efficiency of AI/ML workloads, ensuring that they are deployed to clusters with the necessary GPU/TPU resources. This work not only enhances OCM’s capabilities but also positions it as a critical tool in the AI/ML ecosystem, where optimized resource management can lead to substantial performance gains.
+These components are designed to significantly improve the scheduling and resource efficiency of AI/ML workloads, ensuring that they are deployed to clusters with the necessary GPU/TPU resources. This work not only enhances OCM’s capabilities but also positions it as a critical tool in the AI/ML ecosystem, where optimized resource management can lead to substantial performance gains.
 
 ## Work Completed
 
@@ -134,7 +134,7 @@ TThese components are designed to significantly improve the scheduling and resou
 ## Current State
 
 - **Pull Request Status**:
-- [Pull request](https://github.com/open-cluster-management-io/addon-contrib/pull/20) for the `GPU/TPU-Resource-usage-collect-addon`, all core functionalities have been implemented, and will be merged to[addon-contrib](https://github.com/open-cluster-management-io/addon-contrib).
+- [Pull request](https://github.com/open-cluster-management-io/addon-contrib/pull/20) for the `GPU/TPU-Resource-usage-collect-addon`, all core functionalities have been implemented, and will be merged to [addon-contrib](https://github.com/open-cluster-management-io/addon-contrib).
 - [Pull request](https://github.com/open-cluster-management-io/ocm/pull/601) for OCM Kueue Admission Check Controller proposal. The proposal has undergone an initail review, and will be merged to [ocm-io/solution](https://github.com/open-cluster-management-io/ocm/tree/main/solutions).
 
 - **Community Demo**:
