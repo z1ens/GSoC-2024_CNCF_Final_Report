@@ -9,6 +9,13 @@
 **Organization:** [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io)  && [Open-Cluster-management](https://open-cluster-management.io)  
 **Project:** [[GSoC 2024]Scheduling AI Workload Among Multiple Clusters](https://github.com/open-cluster-management-io/ocm/issues/369)
 
+### Update on April 7, 2025:
+Exciting news! The OCM admission check controller — an integration between MultiKueue and Open Cluster Management (OCM) — is now officially featured on the [Kueue website](https://kueue.sigs.k8s.io/docs/tasks/manage/setup_multikueue/#optional-setup-multikueue-with-open-cluster-management)! 🎉
+This solution helps Kueue users simplify MultiKueue setup, automatically generate the required Kubeconfigs, and improve multicluster workload scheduling. I'm thrilled to see this piece of my GSoC work become part of the recommended setup path for real-world use!
+Thank you, Qing Hao, Thank you my beloved mentors who help pushing this through, Thanks to everyone in OCM!
+
+ref: [relevant_PR](https://github.com/kubernetes-sigs/kueue/pull/4794) 
+
 ## TL;DR
 
 Hello! I'm Zhe Shen, and this is my first time participating in [Google Summer of Code](https://summerofcode.withgoogle.com). I'm honored to have been selected as a contributor by the [Cloud Native Computing Foundation](https://www.cncf.io) to work with [Open-Cluster-Management](https://open-cluster-management.io).
